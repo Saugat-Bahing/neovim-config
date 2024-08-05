@@ -6,3 +6,5 @@ vim.keymap.set('n', '<leader>ps', function()
 end)
 
 vim.keymap.set('n', '<leader>fr', "<cmd>Telescope lsp_references<cr>")
+
+require("telescope").load_extension("harpoon")
