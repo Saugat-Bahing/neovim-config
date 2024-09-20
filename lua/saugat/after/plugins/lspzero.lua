@@ -11,8 +11,8 @@ lsp_zero.format_on_save({
 
 require('mason').setup({})
 require('mason-lspconfig').setup({
-	ensure_installed = {},
-	handlers = {
+	ensure_installed = {'lua_ls'},
+	andlers = {
 		function(server_name)
 			require('lspconfig')[server_name].setup({})
 		end,
